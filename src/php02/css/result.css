@@ -1,0 +1,69 @@
+/* 結果画面のメインコンテンツのラッパー */
+.result__content {
+    margin: 0 auto;
+    /* 左右中央寄せ */
+    padding: 60px 15px;
+    /* 上下60px、左右15pxの内側余白 */
+    max-width: 1230px;
+    /* 最大横幅1230pxに制限 */
+}
+
+/* 複数のカードを横並びにし、中央揃えにするコンテナ */
+.result-cards {
+    display: flex;
+    /* 子要素を横並びにする */
+    justify-content: center;
+    /* 横方向の中央揃え */
+}
+
+/* 各カードのスタイル */
+.result-card {
+    margin: 0 20px;
+    /* 左右に20pxの外側余白 */
+    width: 360px;
+    /* 幅360pxに固定 */
+    border-radius: 3px;
+    /* 角を少し丸くする */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .15);
+    /* 影をつけて浮き上がらせる */
+}
+
+/* カード内の画像ラッパー：アスペクト比を16:9に保つ */
+.result-card__img-wrapper {
+    position: relative;
+    /* 子要素の絶対配置の基準にする */
+    padding-top: 56.25%;
+    /* 高さを幅の56.25%に設定（16:9の比率） */
+}
+
+/* 画像本体のスタイル */
+.result-card__img {
+    position: absolute;
+    /* 親の相対位置を基準に絶対配置 */
+    top: 50%;
+    /* 親の縦中央に配置 */
+    width: 100%;
+    /* 横幅は親と同じ */
+    height: 100%;
+    /* 高さは親と同じ */
+    transform: translateY(-50%);
+    /* 自分の高さの半分だけ上に移動し、完全に中央に */
+}
+
+/* カード本文部分：テキストを左右に配置 */
+.result-card__body {
+    display: flex;
+    /* 横並びにする */
+    justify-content: space-between;
+    /* 両端に要素を配置 */
+    padding: 15px;
+    /* 内側余白15px */
+}
+
+/* 都市名と時刻のテキスト共通設定 */
+.result-card__city,
+.result-card__time {
+    margin: 0;
+    /* デフォルトの余白をリセット */
+    font-size: 18px;
+    /* 文字サイズ18pxに設定 */ }

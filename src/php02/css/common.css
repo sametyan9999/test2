@@ -1,0 +1,25 @@
+/* ヘッダー全体の背景色を黒に設定 */
+.header {
+    background: #000;
+}
+
+/* ヘッダー内のコンテンツを中央寄せし、最大幅を制限してパディングを追加 */
+.header__inner {
+    margin: 0 auto;
+    /* 左右中央寄せ */
+    padding: 20px 15px;
+    /* 上下20px、左右15pxの内側余白 */
+    max-width: 1230px;
+    /* コンテンツの最大横幅を1230pxに制限 */
+}
+
+/* ロゴテキストのスタイル設定 */
+.header__logo {
+    color: #fff;
+    /* テキスト色を白に設定 */
+    text-decoration: none;
+    /* 下線をなくす（リンクっぽく見せない） */
+    font-weight: bold;
+    /* 太字にする */
+    font-size: 24px;
+    /* フォントサイズを大きめに設定 */ }

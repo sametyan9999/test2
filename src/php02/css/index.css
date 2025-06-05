@@ -1,0 +1,74 @@
+/* 検索フォーム全体のラッパー：中央寄せ・内側余白・最大幅指定 */
+.search-form__content {
+    margin: 0 auto;
+    /* 左右中央寄せ */
+    padding: 60px 15px;
+    /* 上下60px、左右15pxの内側余白 */
+    max-width: 1230px;
+    /* 最大横幅を1230pxに制限 */
+}
+
+/* タイトルの中央寄せ */
+.search-form__content-title {
+    text-align: center;
+    /* テキストを中央に揃える */
+}
+
+/* 検索フォーム本体：中の要素を横並びにする */
+.search-form {
+    display: flex;
+    /* 要素を横並びに配置（flexbox） */
+    justify-content: center;
+    /* 中央に揃える */
+}
+
+/* 入力項目のラッパー：幅とパディングを調整 */
+.search-form__item {
+    padding: 0 5px;
+    /* 左右に5pxの余白 */
+    width: 300px;
+    /* 固定幅300px */
+}
+
+/* セレクトボックスの見た目を整える */
+.search-form__item-select {
+    padding: 10px;
+    /* 内側余白（上下左右） */
+    width: 100%;
+    /* 親要素いっぱいに広げる */
+    height: 40px;
+    /* 高さを40pxに固定 */
+    border: 1px solid #ddd;
+    /* 薄いグレーの枠線 */
+    border-radius: 3px;
+    /* 角を少し丸める */
+    appearance: none;
+    /* OS標準の見た目を無効にする（デザイン統一のため） */
+}
+
+/* ボタンのラッパー：幅と余白を調整 */
+.search-form__button {
+    padding: 0 5px;
+    /* 左右に5pxの余白 */
+    width: 120px;
+    /* 幅120px */
+}
+
+/* 実際の検索ボタンの見た目設定 */
+.search-form__button-submit {
+    padding: 10px;
+    /* ボタン内の余白 */
+    width: 100%;
+    /* 親要素いっぱいに広げる */
+    height: 40px;
+    /* 高さを40pxに固定 */
+    border: none;
+    /* 枠線を消す */
+    border-radius: 3px;
+    /* 角を少し丸める */
+    background: #000;
+    /* 背景を黒にする */
+    color: #fff;
+    /* 文字色を白にする */
+    cursor: pointer;
+    /* マウスを乗せたときにポインターにする */ }

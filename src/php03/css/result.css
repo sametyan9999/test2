@@ -1,0 +1,51 @@
+/* 結果表示の外枠（中央寄せ＆パディング調整） */
+.result__content {
+    margin: 0 auto;
+    padding: 60px 15px;
+    max-width: 1230px;
+}
+
+/* 正解・不正解のテキストを中央寄せ */
+.result {
+    text-align: center;
+}
+
+/* 正解メッセージの色（赤） */
+.result__text_correct {
+    color: #ff0000;
+}
+
+/* 不正解メッセージの色（青） */
+.result__text_incorrect {
+    color: #0000ff;
+}
+
+/* 回答テーブルの外枠に薄い枠線 */
+.answer-table {
+    border: 1px solid #ddd;
+}
+
+/* テーブル本体（横幅いっぱい） */
+.answer-table__inner {
+    width: 100%;
+}
+
+/* 見出しセル（左側） */
+.answer-table__header {
+    padding: 15px;
+    width: 20%;
+    border-bottom: 1px solid #ddd;
+    background-color: #eee;
+    font-weight: bold;
+}
+
+/* データセル（右側） */
+.answer-table__text {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* テーブルの最終行だけ下線を消す（見た目を整えるため） */
+.answer-table__row:last-child .answer-table__header,
+.answer-table__row:last-child .answer-table__text {
+    border-bottom-width: 0; }

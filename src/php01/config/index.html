@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- フォーム開始：送信先は result.php、送信方法は POST -->
+    <form action="result.php" method="post">
+
+        <!-- ユーザーが名前を入力するテキストフィールド -->
+        お名前：<input type="text" name="my_name" />
+        <br>
+
+        <!-- 商品の選択肢（ラジオボタン：A/B/Cセットのいずれかを1つ選ぶ） -->
+        ご希望商品 :
+        <input type="radio" name="choices" value="Aセット" />Aセット
+        <input type="radio" name="choices" value="Bセット" />Bセット
+        <input type="radio" name="choices" value="Cセット" />Cセット
+        <br>
+
+        <!-- 注文数の入力（数値のみ） -->
+        注文数：
+        <input type="number" name="number" value="">
+
+        <!-- 送信ボタン -->
+        <input type="submit" value="送信" />
+    </form>
+</body>
+
+</html>

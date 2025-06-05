@@ -1,0 +1,116 @@
+.quiz__content {
+    /* コンテンツ全体を中央に寄せる */
+    margin: 0 auto;
+
+    /* コンテンツ内側の余白（上下60px、左右15px） */
+    padding: 60px 15px;
+
+    /* 最大幅を1230pxに制限（大画面でも読みやすく） */
+    max-width: 1230px;
+}
+
+.question {
+    /* 中央寄せ */
+    margin: 0 auto;
+
+    /* 内側の余白（上下10px、左右20px） */
+    padding: 10px 20px;
+
+    /* 固定幅（中央揃えと組み合わせてバランス良く） */
+    width: 550px;
+
+    /* 角を少し丸くする */
+    border-radius: 3px;
+
+    /* 背景を黒に */
+    background: #000;
+
+    /* 中のテキストを中央揃えに */
+    text-align: center;
+}
+
+.question__text {
+    /* テキストの色を白に（黒背景に合わせて視認性を高める） */
+    color: #fff;
+
+    /* テキストを左寄せに（中央揃えより読みやすい） */
+    text-align: left;
+}
+
+.quiz-form {
+    /* フォームを中央寄せ */
+    margin: 0 auto;
+
+    /* 上側に少し余白を空ける */
+    padding-top: 20px;
+
+    /* 幅を550pxに設定（質問と揃える） */
+    width: 550px;
+
+    /* 内容を中央揃えに */
+    text-align: center;
+}
+
+.quiz-form__item {
+    /* 下に30pxの余白を追加（選択肢とボタンの間など） */
+    margin-bottom: 30px;
+}
+
+.quiz-form__group {
+    /* 各選択肢ブロックの下に5pxの余白 */
+    margin-bottom: 5px;
+
+    /* 枠線を薄いグレーで表示 */
+    border: 1px solid #ddd;
+
+    /* 角を少し丸める */
+    border-radius: 3px;
+}
+
+.quiz-form__radio {
+    /* ラジオボタンを非表示に（見た目はlabelで制御する） */
+    display: none;
+}
+
+.quiz-form__radio:checked+label {
+    /* チェックされたときに背景色を変更（選択中を示す） */
+    background: #ddd;
+}
+
+.quiz-form__label {
+    /* ブロック要素にして全体クリックできるように */
+    display: block;
+
+    /* 内側の余白を追加 */
+    padding: 20px;
+
+    /* 幅100%で枠いっぱいに広げる */
+    width: 100%;
+
+    /* マウスカーソルをポインターに（クリックできることを示す） */
+    cursor: pointer;
+}
+
+.quiz-form__button {
+    /* 回答ボタンのブロックも質問と同じ幅に揃える */
+    width: 550px;
+}
+
+.quiz-form__button-submit {
+    /* 内側の余白を調整（上下10px） */
+    padding: 10px;
+
+    /* 横幅は100%、高さは50pxでボタンとして見やすく */
+    width: 100%;
+    height: 50px;
+
+    /* 枠線なし、角を少し丸める */
+    border: none;
+    border-radius: 3px;
+
+    /* 黒背景に白文字（質問と合わせる） */
+    background: #000;
+    color: #fff;
+
+    /* ホバー感のあるカーソルに */
+    cursor: pointer; }
